@@ -1,0 +1,29 @@
+# coding: utf-8
+
+<UI>:
+    MDScreen:
+        name: "appshop"
+        md_bg_color: 1, 1, 1, 1  # branco opaco
+        MDFloatLayout:
+            MDLabel:
+                text: "App padrão para dispositivos móveis\nPara vendas de produtos."
+                pos_hint: {"center_x": .5, "center_y": .5}
+                halign: "center"
+                font_size: "16sp"
+
+            MDButton:
+                id: btn_menu                
+                pos_hint: {"center_x": .5, "center_y": .2}
+                size_hint: 0.7, 0.13  # aumenta largura e altura
+                style: "filled"
+                theme_width: "Custom"
+                width: "200dp"
+                theme_text_color: "Custom"
+                text_color: 0, 0, 0, 1  # preto
+                font_size: "20sp"
+                padding: "24dp", "12dp"
+                on_release: app.root.current = "home"
+                MDButtonText:
+                    id: text
+                    text: "Acessar Home"
+                    pos_hint: {"center_x": .5, "center_y": .5}

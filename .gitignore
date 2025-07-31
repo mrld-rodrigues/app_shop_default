@@ -1,0 +1,12 @@
+# Ignora variáveis de ambiente e arquivos sensíveis
+.env
+# Outros arquivos e pastas comuns para ignorar
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+.vscode/
+.idea/
+.DS_Store
